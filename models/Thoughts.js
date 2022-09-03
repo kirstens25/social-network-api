@@ -1,19 +1,29 @@
 const { Schema, model } = require('mongoose');
 
 const reactionSchema = new Schema({
-
-  body: {
-    type: String,
-    required: true,
-    minLength: 1,
-    maxLength: 280,
-  }
-
+        
+    reaction_id: {
+        type: Schema.Types.ObjectId,
+        default: () => new Types.ObjectId(),
+    },
+    body: {
+        type: String,
+        required: true,
+        minLength: 1,
+        maxLength: 280,
+    },
+    user_id: {
+        type: String,
+        required: true
+    }
 }, {
-  id: true,
-  timestamps: true,
-});
-
+toJSON: {
+    getters: true
+},
+timestamps: true,
+id: false
+}
+);
 
 // Schema to create a thought model
 const thoughtSchema = new Schema(
