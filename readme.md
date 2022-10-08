@@ -16,7 +16,7 @@ This project is licensed under a MIT License. A short and simple permissive lice
 
 
 ## Walkthrough Video
-Invoke the application by writing 'node index.js' into your command-line terminal.    
+   
    
 ## Usage Information
 This database provides API endpoints for database interaction for a social networking site.
