@@ -17,6 +17,7 @@
     "devDependencies": {
         "@types/mongoose": "^5.11.97",
         "dotenv": "^16.0.1",
+        "mongo": "^0.1.0",
         "nodemon": "^2.0.18"
     }
 }
