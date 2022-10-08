@@ -35,12 +35,21 @@ const thoughtSchema = new Schema(
       maxLength: 280,
 
     },
-    reactions: [reactionSchema],
+     reactions: [
+      reactionSchema
+    ],
+    user_id: {
+        type: String,
+        required: true
+    }
   },
   {
-    id: true,
+    toJSON: {
+        getters:true,
+        virtuals:true
+    },
+    id: false,
     timestamps: true,
-
   }
 );
 
