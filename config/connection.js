@@ -6,8 +6,7 @@ module.exports = {
 
     // process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/social';
 
-    var isConnected = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/', {
-      useNewUrlParser: true,
+    var isConnected = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/socialmedia', {      useNewUrlParser: true,
       useUnifiedTopology: true,
     });
     console.log(isConnected);
